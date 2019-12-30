@@ -115,3 +115,37 @@ Furthermore, to detect unique values and counts for all variables using the code
 [We do this in order to determine inputs for nominal columns]
 
 > df.apply(pd.Series.value_counts) 
+
+INSERT OUTPUT 2 HERE
+
+### Step 4
+Using the results of step 3 above, the ‘mean’ value will serve as imputes for missing values of numerical attributes while the ‘mode’ serves as imputes for nominal columns.
+
+Given that the **ratio** of “missing values to total number of observations is small, between 0.8% and 1.9%, using the mean and the mode as imputes for missing values is not expected to distort the dataset in any way.
+
+The following is the code we use to effect these imputations. The seven (7) variables involved are treated individually.
+
+> df['A1'].fillna('b', inplace=True)
+
+> df['A2'].fillna(31.568, inplace=True)
+
+> df['A4'].fillna('u', inplace=True)
+
+> df['A5'].fillna('g', inplace=True)
+
+> df['A6'].fillna('c', inplace=True)
+
+> df['A7'].fillna('v', inplace=True)
+
+> df['A14'].fillna(184, inplace=True)
+
+### Step 5
+Next, save the clean and new dataset. It is this ‘missing-value free’ dataset that we shall use in implementing project (all 5 sub-projects) discussed in this portfolio.
+
+> df.to_csv('C:/Users/Owner/Desktop/DATA/CAD/ABC-1.csv')
+
+To assess the clean-up exercise, compare the contents of the old and new files for a specific row / column by using the following codes.
+
+> df=pd.read_csv('C:/Users/Owner/Desktop/DATA/CAD/ABC.csv', na_values=missing_values)
+
+> df.iloc[248,:]
