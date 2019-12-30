@@ -18,13 +18,13 @@ There is **one class attribute** (column A16)
 
 The groupings of attribute labels by value types are as below - 
 
-  **Nominal**:              A1, A4, A5, A6, A7, A9, A10, A12, A13
+>  **Nominal**:              A1, A4, A5, A6, A7, A9, A10, A12, A13
   
-  **Continuous**:           A2, A3, A8
+>  **Continuous**:           A2, A3, A8
   
-  **Continuous (Integer)**: A11, A14, A15
+>  **Continuous (Integer)**: A11, A14, A15
   
-  **Class Attribute**:      A16
+>  **Class Attribute**:      A16
 
 
 ## Process
@@ -112,6 +112,6 @@ Next, we confirm that the entire dataset is captured and to do this a glimpse at
 INSERT OUTPUT 1 HERE
 
 Furthermore, to detect unique values and counts for all variables using the code below: 
-[We do this in order to determine inputs for nominal columns.]
+[We do this in order to determine inputs for nominal columns]
 
-df.apply(pd.Series.value_counts) 
+> df.apply(pd.Series.value_counts) 
