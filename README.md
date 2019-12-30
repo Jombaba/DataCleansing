@@ -65,8 +65,46 @@ The total number of missing values is derived using the following code
 
 > df.isnull().sum().sum()
 
-*Output: 67
+*Output: 67*
 
 To confirm whether or not the dataset was imported correctly, examine the first five (5) and the last five (5) records of the dataset.
 
-> df.head(5) 
+> df.head(5)
+
+*Output:*
+
+A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
+
+0 b 30.83 0.000 u g w v 1.25 t t 1 f g 202 0 +
+
+1 a 58.67 4.460 u g q h 3.04 t t 6 f g 43 560 +
+
+2 a 24.5 0.500 u g q h 1.50 t f 0 f g 280 824 +
+
+3 b 27.83 1.540 u g w v 3.75 t t 5 t g 100 3 +
+
+4 b 20.17 5.625 u g w v 1.71 t f 0 f s 120 0 +
+
+> df.tail(5)
+
+*Output:*
+
+A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
+
+685 b 21.08 10.085 y p e h 1.25 f f 0 f g 260 0 -
+
+686 a 22.67 0.750 u g c v 2.00 f t 2 t g 200 394 -
+
+687 a 25.25 13.500 y p ff ff 2.00 f t 1 t g 200 1 -
+
+688 b 17.92 0.205 u g aa v 0.04 f f 0 f g 280 750 -
+
+689 b 35 3.375 u g c h 8.29 f f 0 t g 0 0 -
+
+Next, we confirm that the entire dataset is captured and to do this a glimpse at the basic statistics of numerical features is revealed through the following codes.
+
+> df.shape
+
+*Output: (690, 16)*
+
+> df.describe()
