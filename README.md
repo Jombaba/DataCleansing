@@ -109,7 +109,17 @@ Next, we confirm that the entire dataset is captured and to do this a glimpse at
 
 > df.describe()
 
-INSERT OUTPUT 1 HERE
+| 	| A2	| A3	| A8	| A11	| A14	| A15 |
+| ---	| ---	| ---	| ---	| ---	| ---	| --- |
+| **_count_**	| 678	| 690	| 690	| 690	| 677	| 690 |
+| **_mean_**	| 31.568171	| 4.758725	| 2.223406	| 2.4	| 184.014771	| 1017.385507 |
+| **_std_**	| 11.957862	| 4.978163	| 3.346513	| 4.86294	| 173.806768	| 5210.102598 |
+| **_min_**	| 13.75	| 0	| 0	| 0	| 0	| 0 |
+| **_0.25_**	| 22.6025	| 1	| 0.165	| 0	| 75	| 0 |
+| **_0.5_**	| 28.46	| 2.75	| 1	| 0	| 160	| 5 |
+| **_0.75_**	| 38.23	| 7.2075	| 2.625	| 3	| 276	| 395.5 |
+| **_max_**	| 80.25	| 28	| 28.5	| 67	| 2000	| 100000 |
+
 
 Furthermore, to detect unique values and counts for all variables using the code below: 
 [We do this in order to determine inputs for nominal columns]
@@ -150,8 +160,17 @@ To assess the clean-up exercise, compare the contents of the old and new files f
 
 > df.iloc[248,:]
 
+Output [21]:
 
-From the results above, we observe that for element (row) number 248, the missing value for feature labeled A1 is NaN in the first file has been imputed with value b in the second file. This is the expected result.
+Unnamed: 0 248 
+
+| A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | A10 | A11 | A12 | A13 | A14 | A15 | A16
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| B | 30.83 | 0 | u | G | w | v | 1.25 | t | t | 1 | F | g | 202 | 0 | + |
+| A | 58.67 | 4.46 | u | G | q | h | 3.04 | t | t | 6 | F | g | 43 | 560 | + |
+
+
+From the results above, we observe that for element (row) number 248, the missing value for feature labeled A1 is **NaN** in the first file has been imputed with value **b** in the second file. This is the expected result.
 
 ## Summary and Conclusion:
 
