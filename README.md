@@ -87,7 +87,7 @@ A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
 
 > df.tail(5)
 
-**Output_**:
+**_Output_**:
 
 A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
 
@@ -108,3 +108,10 @@ Next, we confirm that the entire dataset is captured and to do this a glimpse at
 **_Output_**: (690, 16)
 
 > df.describe()
+
+INSERT OUTPUT 1 HERE
+
+Furthermore, to detect unique values and counts for all variables using the code below: 
+[We do this in order to determine inputs for nominal columns.]
+
+df.apply(pd.Series.value_counts) 
