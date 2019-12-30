@@ -38,11 +38,11 @@ The original dataset was in .txt format and below is an abstract of it.
 
 The .txt file was imported into excel using the ‘import from text’ Excel menu to obtain a .xls file which looks like the following:
 
-A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
+A1 | A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
 
-B 30.83 0 u G w v 1.25 t t 1 F g 202 0 +
+B | 30.83 0 u G w v 1.25 t t 1 F g 202 0 +
 
-A 58.67 4.46 u G q h 3.04 t t 6 F g 43 560 +
+A | 58.67 | 4.46 | u | G | q | h | 3.04 | t | t | 6 | F | g | 43 | 560 | +
 
 ### Step 2
 To prepare the required environment using Python pandas and numpy libraries, we issue the following commands.
