@@ -3,39 +3,20 @@ This is the first in a series of projects. The purpose of the data cleaning proj
 
 The dataset comprises continuous and nominal attributes of small and large values. For reasons of privacy, the dataset was published with column labels A1 – A16 replacing the actual descriptive labels.
 
-# Dataset
-The dataset is found at: - https://archive.ics.uci.edu/ml/datasets/credit+approval Number of instances (observations) = 690 Number of attributes =15 (columns A1-A15) There is one class attribute (column A16) 307 (44.5%) of the classifier is “+” and 383 (55.5%) is “-“
+## Dataset
+The dataset is found at: - https://archive.ics.uci.edu/ml/datasets/credit+approval 
 
-Attribute Label Value Type
+Number of instances (observations) = 690
+Number of attributes =15 (columns A1-A15)
 
-A1 Nominal
+There is one class attribute (column A16) 307 (44.5%) of the classifier is “+” and 383 (55.5%) is “-“
 
-A2 continuous
+The groupings of attribute labels by value types are as below - 
 
-A3 continuous
-
-A4 Nominal
-
-A5 Nominal
-
-A6 Nominal
-
-A7 Nominal
-
-A8 continuous
-
-A9 Nominal
-
-A10 Nominal
-
-A11 Continuous (Integer)
-
-A12 Nominal
-
-A13 Nominal
-
-A14 Continuous (Integer)
-
-A15 Continuous (Integer)
-
-A16 Class attribute 
+  *Nominal*:              A1, A4, A5, A6, A7, A9, A10, A12, A13
+  
+  *Continuous*:           A2, A3, A8
+  
+  *Continuous (Integer)*: A11, A14, A15
+  
+  *Class Attribute*:      A16
