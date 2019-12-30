@@ -53,4 +53,20 @@ To prepare the required environment using Python pandas and numpy libraries, we 
 > *import numpy as np*
 
 ### Step 3
-Next, to detect the character and distribution of the missing values we use the following codes
+Next, to detect the character and distribution of the missing values we use the following codes.
+
+> missing_values = ["?"]
+
+> df=pd.read_csv('C:/Users/Owner/Desktop/DATA/CAD/ABC.csv', na_values=missing_values)
+
+> df.isnull().sum()
+
+The total number of missing values is derived using the following code
+
+> df.isnull().sum().sum()
+
+*Output: 67
+
+To confirm whether or not the dataset was imported correctly, examine the first five (5) and the last five (5) records of the dataset.
+
+> df.head(5) 
