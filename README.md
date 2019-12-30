@@ -160,13 +160,21 @@ To assess the clean-up exercise, compare the contents of the old and new files f
 
 > df.iloc[248,:]
 
-Output [21]:
+| A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | A10 | A11 | A12 | A13 | A14 | A15 | A16
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| _NaN_ | 24.5 | 12.75 | u | g | c | bb | 4.75 | t | t | 2 | f | g | 73 | 444 | + |
+
+> df=pd.read_csv('C:/Users/Owner/Desktop/DATA/CAD/ABC-1.csv')
+
+> df.iloc[248,:]
+
+**_Output [21]_**:
 
 Unnamed: 0 248 
 
 | A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | A10 | A11 | A12 | A13 | A14 | A15 | A16
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| _*b*_ | 24.5 | 12.75 | u | g | c | bb | 4.75 | t | t | 2 | f | g | 73 | 444 | + |
+| _b_ | 24.5 | 12.75 | u | g | c | bb | 4.75 | t | t | 2 | f | g | 73 | 444 | + |
 
 From the results above, we observe that for element (row) number 248, the missing value for feature labeled A1 is **NaN** in the first file has been imputed with value **b** in the second file. This is the expected result.
 
