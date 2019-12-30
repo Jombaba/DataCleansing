@@ -53,7 +53,7 @@ To prepare the required environment using Python pandas and numpy libraries, we 
 > *import numpy as np*
 
 ### Step 3
-Next, to detect the character and distribution of the missing values we use the following codes.
+Next, to detect the character and distribution of the missing values we use the following codes:
 
 > missing_values = ["?"]
 
@@ -61,13 +61,13 @@ Next, to detect the character and distribution of the missing values we use the 
 
 > df.isnull().sum()
 
-The total number of missing values is derived using the following code
+The total number of missing values is derived using the following code:
 
 > df.isnull().sum().sum()
 
 **_Output_**: 67
 
-To confirm whether or not the dataset was imported correctly, examine the first five (5) and the last five (5) records of the dataset.
+To confirm whether or not the dataset was imported correctly, examine the first five (5) and the last five (5) records of the dataset:
 
 > df.head(5)
 
@@ -87,7 +87,7 @@ A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
 
 > df.tail(5)
 
-*Output:*
+**Output_**:
 
 A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
 
@@ -101,10 +101,10 @@ A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
 
 689 b 35 3.375 u g c h 8.29 f f 0 t g 0 0 -
 
-Next, we confirm that the entire dataset is captured and to do this a glimpse at the basic statistics of numerical features is revealed through the following codes.
+Next, we confirm that the entire dataset is captured and to do this a glimpse at the basic statistics of numerical features is revealed through the following codes:
 
 > df.shape
 
-*Output: (690, 16)*
+**_Output_**: (690, 16)
 
 > df.describe()
