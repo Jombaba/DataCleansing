@@ -51,7 +51,7 @@ A | 58.67 | 4.46 | u | G | q | h | 3.04 | t | t | 6 | F | g | 43 | 560 | +
 
 
 | A | B |
-| : | : |
+| --- | --- |
 | 1 | 2 |
 ### Step 2
 To prepare the required environment using Python pandas and numpy libraries, we issue the following commands.
