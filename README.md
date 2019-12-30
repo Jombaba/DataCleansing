@@ -5,7 +5,7 @@ The dataset comprises continuous and nominal attributes of small and large value
 
 
 ## Dataset
-The dataset is found at: - https://archive.ics.uci.edu/ml/datasets/credit+approval 
+The dataset is found at: https://archive.ics.uci.edu/ml/datasets/credit+approval 
 
 **Number of instances (observations)**: 690
 
@@ -144,8 +144,17 @@ Next, save the clean and new dataset. It is this ‘missing-value free’ datase
 
 > df.to_csv('C:/Users/Owner/Desktop/DATA/CAD/ABC-1.csv')
 
-To assess the clean-up exercise, compare the contents of the old and new files for a specific row / column by using the following codes.
+To assess the clean-up exercise, compare the contents of the old and new files for a specific row / column by using the following codes:
 
 > df=pd.read_csv('C:/Users/Owner/Desktop/DATA/CAD/ABC.csv', na_values=missing_values)
 
 > df.iloc[248,:]
+
+
+From the results above, we observe that for element (row) number 248, the missing value for feature labeled A1 is NaN in the first file has been imputed with value b in the second file. This is the expected result.
+
+## Summary and Conclusion:
+
+The comparison of the files before and after cleaning-up, illustrate that the exercise was successfully implemented and that all 67 missing values were appropriately replaced. Thus, using Excel and the Python library as our wrangling tools, we have been able to prepare the data for analysis. The improved quality of our data boosts the predictability level of analytical tools thereby promoting plausible insights from the dataset.
+
+For our purpose, we assume that this dataset characterizes the activities of a specific institution (e.g. a Bank) over a given period, a quarter say. In a nutshell, the basic statistics ( *df.describe()* ) used in this sub-project captures a description of what happened fully. Again, for our purpose this is a satisfactory coverage of descriptive analytics. 
