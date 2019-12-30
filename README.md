@@ -61,6 +61,11 @@ Next, to detect the character and distribution of the missing values we use the 
 
 > df.isnull().sum()
 
+| A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | A10 | A11 | A12 | A13 | A14 | A15 | A16
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 12 | 12 | 0 | 6 | 6 | 9 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 13 | 0 | 0 |
+
+
 The total number of missing values is derived using the following code:
 
 > df.isnull().sum().sum()
