@@ -15,7 +15,7 @@ There is **one class attribute** (column A16)
 
 **Classifier Breakdown**: 307 (44.5%) =  “+” and 383 (55.5%) = “-“
 
-
+___
 The groupings of attribute labels by value types are as below - 
 
   **Nominal**:              A1, A4, A5, A6, A7, A9, A10, A12, A13
