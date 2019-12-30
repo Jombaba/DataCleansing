@@ -1,0 +1,2 @@
+# DataCleansing
+This is the first in a series of projects. The purpose of the data cleaning project is to clean-up the ‘Credit Card Application’ dataset by removing missing and other out of place characters. Initial examination of the dataset shows that we have missing values to contend with. There are 67 missing values in the dataset.  The dataset comprises continuous and nominal attributes of small and large values. For reasons of privacy, the dataset was published with column labels A1 – A16 replacing the actual descriptive labels.
