@@ -7,23 +7,23 @@ The dataset comprises continuous and nominal attributes of small and large value
 ## Dataset
 The dataset is found at: - https://archive.ics.uci.edu/ml/datasets/credit+approval 
 
-Number of instances (observations) = 690
+**Number of instances (observations)**: 690
 
-Number of attributes =15 (columns A1-A15)
+**Number of attributes**: 15 (columns A1-A15)
 
-There is one class attribute (column A16) 
+There is **one class attribute** (column A16) 
 
-307 (44.5%) of the classifier is “+” and 383 (55.5%) is “-“
+**Classifier Breakdown**: 307 (44.5%) =  “+” and 383 (55.5%) = “-“
 
 The groupings of attribute labels by value types are as below - 
 
-  *Nominal*:              A1, A4, A5, A6, A7, A9, A10, A12, A13
+  **Nominal**:              A1, A4, A5, A6, A7, A9, A10, A12, A13
   
-  *Continuous*:           A2, A3, A8
+  **Continuous**:           A2, A3, A8
   
-  *Continuous (Integer)*: A11, A14, A15
+  **Continuous (Integer)**: A11, A14, A15
   
-  *Class Attribute*:      A16
+  **Class Attribute**:      A16
 
 
 ## Process
@@ -38,11 +38,10 @@ The original dataset was in .txt format and below is an abstract of it.
 
 The .txt file was imported into excel using the ‘import from text’ Excel menu to obtain a .xls file which looks like the following:
 
-A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | A10 | A11 | A12 | A13 | A14 | A15 | A16
+| A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | A10 | A11 | A12 | A13 | A14 | A15 | A16
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-B | 30.83 | 0 | u | G | w | v | 1.25 | t | t | 1 | F | g | 202 | 0 | +
-
-A | 58.67 | 4.46 | u | G | q | h | 3.04 | t | t | 6 | F | g | 43 | 560 | +
+| B | 30.83 | 0 | u | G | w | v | 1.25 | t | t | 1 | F | g | 202 | 0 | + |
+| A | 58.67 | 4.46 | u | G | q | h | 3.04 | t | t | 6 | F | g | 43 | 560 | + |
 
 
 ### Step 2
