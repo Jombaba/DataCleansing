@@ -32,9 +32,9 @@ The groupings of attribute labels by value types are as below -
 
 The original dataset was in .txt format and below is an abstract of it.
 
-b,30.83,0,u,g,w,v,1.25,t,t,01,f,g,00202,0,+
+> b,30.83,0,u,g,w,v,1.25,t,t,01,f,g,00202,0,+
 
-a,58.67,4.46,u,g,q,h,3.04,t,t,06,f,g,00043,560,+
+> a,58.67,4.46,u,g,q,h,3.04,t,t,06,f,g,00043,560,+
 
 The .txt file was imported into excel using the ‘import from text’ Excel menu to obtain a .xls file which looks like the following:
 
@@ -47,9 +47,9 @@ A 58.67 4.46 u G q h 3.04 t t 6 F g 43 560 +
 ### Step 2
 To prepare the required environment using Python pandas and numpy libraries, we issue the following commands.
 
-*import pandas as pd*
+> *import pandas as pd*
 
-*import numpy as np*
+> *import numpy as np*
 
 ### Step 3
 Next, to detect the character and distribution of the missing values we use the following codes
