@@ -65,13 +65,13 @@ The total number of missing values is derived using the following code
 
 > df.isnull().sum().sum()
 
-*Output: 67*
+**_Output_**: 67
 
 To confirm whether or not the dataset was imported correctly, examine the first five (5) and the last five (5) records of the dataset.
 
 > df.head(5)
 
-*Output:*
+**_Output_**:
 
 A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16
 
